@@ -43,7 +43,7 @@ end
 
 -- buat GUI key secara langsung
 local gui = Instance.new("ScreenGui")
-gui.Name = "KeySystemUI"
+gui.Name = "KeySystem"
 gui.Parent = playerGui
 
 local frame = Instance.new("Frame")
