@@ -1,5 +1,5 @@
 --[[  
-🔥 Local Key System + Game Loader (versi offline)
+🔥 Local Key System + Game Loader
 File: Welcome/Main/Loader/AllGame.lua
 --]]
 
@@ -43,7 +43,7 @@ end
 
 -- buat GUI key secara langsung
 local gui = Instance.new("ScreenGui")
-gui.Name = "KeySystem"
+gui.Name = "KeySystemUI"
 gui.Parent = playerGui
 
 local frame = Instance.new("Frame")
@@ -128,15 +128,15 @@ repeat task.wait() until player.HasAccess.Value == true
 -- === [ KEY SYSTEM SELESAI ] ===
 
 
--- === [ GAME LOADER OFFLINE ] ===
+-- === [ GAME LOADER ASLI ] ===
 local PlaceId = game.PlaceId
 
 if PlaceId == 2753915549 or PlaceId == 4442272183 or PlaceId == 7449423635 then
-	dofile("Welcome/Main/BloxFruit/Main/AllDevice.lua")
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/ThundarZ/Welcome/main/Main/BloxFruit/Main/AllDevice.lua'))()
 elseif PlaceId == 6918802270 or PlaceId == 14979402479 then
-	dofile("Welcome/Main/HazePiece/AllDevices.lua")
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/ThundarZ/Welcome/main/Main/HazePiece/AllDevices.lua'))()
 elseif PlaceId == 16732694052 then
-	dofile("Welcome/Main/Fisch/Main.lua")
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/ThundarZ/Welcome/refs/heads/main/Main/Fisch/Main.lua'))()
 elseif PlaceId == 126884695634066 then
-	dofile("Welcome/Main/GaG/Main.lua")
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/ThundarZ/Welcome/refs/heads/main/Main/GaG/Main.lua'))()
 end
